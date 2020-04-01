@@ -14,7 +14,7 @@ namespace HomeworkTemplate
             {
                 for (int j = y - 1; j < y + 1; j++)
                 {
-                    if (i >= 0 && j >= 0 && i < row && j < column)
+                    if (i >= 0 && j >= 0 && i < row && j < column && x != i && y!= j)
                     {
                         count += board[i, j];
                     }
