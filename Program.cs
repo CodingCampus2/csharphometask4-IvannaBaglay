@@ -7,13 +7,14 @@ namespace HomeworkTemplate
     {
         static int CalculateLivesNeighborhood(char[,] board, int x,  int y)
         {
-            int lenght = (int)Math.Sqrt(board.Length);
+            int row = board.GetLength(0);
+            int column = board.GetLength(1);
             int count = 0;
             for (int i = x-1; i < x +1; i++)
             {
                 for (int j = y - 1; j < y + 1; j++)
                 {
-                    if (i >= 0 && j >= 0 && i < lenght && j < lenght)
+                    if (i >= 0 && j >= 0 && i < row && j < column)
                     {
                         count += board[i, j];
                     }
